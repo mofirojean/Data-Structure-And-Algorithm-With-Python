@@ -1,15 +1,55 @@
-ID    NAME			 CLASS      GPA
------ ------------------------- ---------- ----
-10015 Smith, John		Sophomore	3.01
-10167 Jones, Wendy		Junior		2.85
-10175 Smith, Jane		Senior		3.92
-10188 Wales, Sam		Senior		3.25
-10200 Roberts, Sally	Freshman	4.00
-10208 Green, Patrick	Freshman	3.95
-10226 Nelson, Amy		Sophomore	2.95
-10334 Roberts, Jane		Senior		3.81
-10387 Taylor, Susan		Sophomore	2.15
-10400 Logan, Mark		Junior		3.33
-10485 Brown, Jessica	Sophomore	2.91
---------------------------------------------------
-Number of students: 11
+10015
+Smith
+John
+2
+3.01
+10167
+Jones
+Wendy
+3
+2.85
+10175
+Smith
+Jane
+4
+3.92
+10188
+Wales
+Sam
+4
+3.25
+10200
+Roberts
+Sally
+1
+4.00
+10208
+Green
+Patrick
+1
+3.95
+10226
+Nelson
+Amy
+2
+2.95
+10334
+Roberts
+Jane
+4
+3.81
+10387
+Taylor
+Susan
+2
+2.15
+10400
+Logan
+Mark
+3
+3.33
+10485
+Brown
+Jessica
+2
+2.91
