@@ -18,7 +18,7 @@ def main():
     studentList.sort(key=lambda rec: rec.idNum)
 
     #   Prints the student Report
-    return studentList
+    printReport(studentList)
 
 
 # print the student report
@@ -41,4 +41,4 @@ def printReport(theList):
 
 
 # Execute the main routine
-printReport(main())
+main()
