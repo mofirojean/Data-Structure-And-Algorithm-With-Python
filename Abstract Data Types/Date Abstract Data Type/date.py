@@ -52,6 +52,18 @@ class Date:
     def __le__(self, otherDate):
         return self._julianDay <= otherDate._julianDay
 
+    #These functions are still be implemented
+    #monthName(), isLeapYear(), numDays(), advanceBy() and 
+    #isValidGregorian(). The isValidGregorian()  
+    # at these level .......  
+    def advanceBy(self, days):
+        new = self._julianDay + days
+        month, day, year = self._toGregorian()
+        
+        
+    
+
+
     # Return Gregorian date as tuple: (month, day, year).
     """Gregorian conversion Helper method that converts our julian day to a gregorian day """
     def _toGregorian(self):
