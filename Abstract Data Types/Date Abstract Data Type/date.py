@@ -1,5 +1,8 @@
 # implements a proleptic Gregorian calender date as a Julian day number
 
+from re import T
+
+
 class Date:
     """Create an object instance for the specified Gregorian date"""
 
@@ -59,7 +62,19 @@ class Date:
     def advanceBy(self, days):
         new = self._julianDay + days
         month, day, year = self._toGregorian()
-        
+
+    #is a leapyear(), to verify for a leap year we divide that year by 4 if a normal year
+    # and by 400 if it is an end of century year.
+    def isleapyear(self):
+        month, day, year = self._toGregorian() 
+        year = self._toGregorian()[2]
+    #Testing if it is an End of Century
+        if year%400 == 0:     
+            return True
+    #Test for if it is a normal year        
+        elif year%4 == 0:
+            return True
+        else : return False        
         
     
 
