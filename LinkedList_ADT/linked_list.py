@@ -19,10 +19,3 @@ def reversal(head):
         curNode = curNode.next
         prevNode.next = revNode
 
-
-myList = LinkedList()
-myList.insert("jean")
-myList.insert("jean")
-myList.insert("jean")
-print(myList)
-
