@@ -4,6 +4,19 @@ class LinkedList:
         self._head = None
         self._size = 0
 
+    # Produces a string representation of our linked list
+    def __str__(self):
+        if self._head is None:
+            return "[]"
+        else:
+            ll_str = "["
+            curr = self._head
+            while curr is not None:
+                ll_str = ll_str + str(curr.data) + " -> "
+                curr = curr.next
+            ll_str = ll_str + "None]"
+            return ll_str
+
     # Returns the number of items in the linked list
     def __len__(self):
         length = 0
