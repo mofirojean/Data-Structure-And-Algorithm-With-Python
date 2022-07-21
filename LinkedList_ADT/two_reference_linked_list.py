@@ -5,7 +5,7 @@ class LinkedList:
         self._head = None
         self._tail = None
 
-    # Produces a string representation of our list
+    # Produces a string representation of our linked list
     def __str__(self):
         if self._head is None:
             return "[]"
