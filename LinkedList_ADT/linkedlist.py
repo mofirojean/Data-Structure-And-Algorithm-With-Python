@@ -74,7 +74,7 @@ class LinkedList:
             prevNode.next = revNode
 
 
-# implemented the Node class to store our data and reference to the next node
+# Defines a private storage class for creating list nodes
 class ListNode:
     def __init__(self, data):
         self.data = data
