@@ -1,4 +1,4 @@
-# implementation of a two reference linked list
+# implementation of a two reference linked list ie with head and tail reference
 class LinkedList:
     """ Constructs an empty list"""
     def __init__(self):
