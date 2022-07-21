@@ -35,7 +35,7 @@ class LinkedList:
 
     # inserts a new item in our linked list
     def insert(self, data):
-        newNode = ListNode(data)
+        newNode = _ListNode(data)
         newNode.next = self._head
         self._head = newNode
 
@@ -75,7 +75,7 @@ class LinkedList:
 
 
 # Defines a private storage class for creating list nodes
-class ListNode:
+class _ListNode:
     def __init__(self, data):
         self.data = data
         self.next = None
