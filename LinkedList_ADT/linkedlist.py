@@ -100,4 +100,3 @@ class _LinkedListIterator:
             item = self._curNode.next
             self._curNode = self._curNode.next
             return item
-
