@@ -56,6 +56,23 @@ class LinkedList:
         else:
             print(" The data must be in the list before it can be removed ")
 
+    # Searching for a Node
+    def unsortedSearch(self, target):
+        curNode = self._head
+        while curNode is not None and curNode.data != target:
+            curNode = curNode.next
+        return curNode is not None
+
+    # reverse our linked list
+    def reversal(self):
+        curNode = self._head
+        prevNode = None
+        while curNode is not None:
+            revNode = prevNode
+            prevNode = curNode
+            curNode = curNode.next
+            prevNode.next = revNode
+
 
 # implemented the Node class to store our data and reference to the next node
 class ListNode:
