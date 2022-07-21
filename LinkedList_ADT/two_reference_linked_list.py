@@ -37,7 +37,7 @@ class LinkedList:
 
         if curNode is not None:
             if curNode is self._head:
-                head = curNode.next
+                self._head = curNode.next
             else:
                 predNode = curNode.next
             if curNode is self._tail:
