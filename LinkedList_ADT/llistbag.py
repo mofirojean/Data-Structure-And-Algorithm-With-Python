@@ -45,7 +45,7 @@ class Bag:
 
     # Returns and iterator for traversing the list of items
     def __iter__(self):
-        return _LinkedListIterator(self._head)
+        return _BagIterator(self._head)
 
 
 # Defines a private storage class for creating list nodes
@@ -56,7 +56,7 @@ class _BagListNode:
 
 
 # Defines a linked list iterator
-class _LinkedListIterator:
+class _BagIterator:
     def __init__(self, listHead):
         self._curNode = listHead
 
