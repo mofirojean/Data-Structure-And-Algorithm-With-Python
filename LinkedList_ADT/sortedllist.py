@@ -66,3 +66,14 @@ class _ListNode:
     def __init__(self, data):
         self.data = data
         self.next = None
+
+
+# Driver Method
+mylist = SortedLinkedList()
+mylist.insert(10)
+mylist.insert(13)
+mylist.insert(12)
+mylist.insert(18)
+print(mylist)
+mylist.delete(12)
+print(mylist)
