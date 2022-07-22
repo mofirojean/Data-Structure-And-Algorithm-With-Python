@@ -4,6 +4,19 @@ class SortedLinkedList:
     def __init__(self):
         self._head = None
 
+    # Produces a string representation of our linked list
+    def __str__(self):
+        if self._head is None:
+            return "[]"
+        else:
+            ll_str = "["
+            curr = self._head
+            while curr is not None:
+                ll_str = ll_str + str(curr.data) + " -> "
+                curr = curr.next
+            ll_str = ll_str + "None]"
+            return ll_str
+
     # Inserts an item to its exact position in the sorted list
     def insert(self, item):
         """Finds the insertion point for the new value"""
@@ -18,7 +31,7 @@ class SortedLinkedList:
         newNode.next = curNode
         # link the new node into the list
         if curNode is self._head:
-            head = newNode
+            self._head = newNode
         else:
             predNode.next = newNode
 
@@ -33,7 +46,7 @@ class SortedLinkedList:
         # Unlike the node containing the item
         if curNode is not None:
             if curNode is self._head:
-                head = curNode.next
+                self._head = curNode.next
             else:
                 predNode.next = curNode.next
 
