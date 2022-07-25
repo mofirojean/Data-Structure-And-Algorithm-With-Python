@@ -22,4 +22,7 @@ def isValidSource(srcfile):
 
 
 # Driver method
-with
+with open("sample.java", "r") as javaFile, open("sample.cpp", "r") as cppFile:
+    print("Testing the files if delimiters are now balanced")
+    print("Testing a C++ file:", isValidSource(cppFile))
+    print("Testing a Java file:", isValidSource(javaFile))
