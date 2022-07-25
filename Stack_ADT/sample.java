@@ -4,7 +4,7 @@ public class Challenge17 {
     //@author: de-lia
     //code challenge 17: Calculate the sum of digits of a positive integer number.
 
-    public static int allSum(int n) {
+    public static int allSum(int n){
         int sum = 0;        // sum is initially zero.
 
         while(n!=0) {   // while n is not zero
