@@ -10,6 +10,17 @@ class Queue:
         self._back = maxSize - 1
         self._qArray = Array(maxSize)
 
+    # Aids the display of our queue
+    def __str__(self):
+        if self.isEmpty():
+            return "[]"
+        else:
+            qList = "["
+            for item in self._qArray:
+                qList = qList + str(item) + ", "
+            qList = qList + "]"
+            return qList
+
     # Returns True if the queue is empty
     def isEmpty(self):
         return self._count == 0
@@ -52,3 +63,5 @@ if __name__ == "__main__":
     myQ.enqueue("Jean")
     myQ.enqueue("Peter")
     print(myQ)
+    myQ.dequeue()
+    print()
