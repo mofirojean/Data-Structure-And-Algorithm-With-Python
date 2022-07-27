@@ -46,14 +46,16 @@ class _PriorityQEntry(object):
 
 
 # Driver Method
-myQ = PriorityQueue()
-myQ.enqueue("purple", 5)
-myQ.enqueue("black", 1)
-myQ.enqueue("orange", 3)
-myQ.enqueue("white", 0)
-myQ.enqueue("green", 1)
-myQ.enqueue("yellow", 5)
-while not myQ.isEmpty():
-    item = myQ.dequeue()
-    print(item)
+if __name__ == "__main__":
+    myQ = PriorityQueue()
+    myQ.enqueue("purple", 5)
+    myQ.enqueue("black", 1)
+    myQ.enqueue("orange", 3)
+    myQ.enqueue("white", 0)
+    myQ.enqueue("green", 1)
+    myQ.enqueue("yellow", 5)
+    # prints all the items in the queue
+    while not myQ.isEmpty():
+        item = myQ.dequeue()
+        print(item)
 
