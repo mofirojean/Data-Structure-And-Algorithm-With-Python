@@ -40,8 +40,8 @@ class PriorityQueue:
 
 # Private storage class for associating queue items with their priority
 class _PriorityQEntry(object):
-    def __init__(self, item, priority):
-        self.item = item
+    def __init__(self, data_item, priority):
+        self.item = data_item
         self.priority = priority
 
 
@@ -58,4 +58,3 @@ if __name__ == "__main__":
     while not myQ.isEmpty():
         item = myQ.dequeue()
         print(item)
-
