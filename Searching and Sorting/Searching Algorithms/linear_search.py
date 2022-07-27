@@ -22,6 +22,19 @@ def sortedLinearSearch(theValue, item):
     return False    # The item is not in the sequence
 
 
+# Finding the smallest value in an unsorted list
+def findSmallest(theValues):
+    n = len(theValues)
+    # Assume the first item is the smallest
+    smallest = theValues[0]
+    # Determine if any other item in the sequence is smaller
+    for i in range(1, n):
+        if theValues[i] < smallest:
+            smallest = theValues[i]
+
+    return smallest     # Return the smallest found
+
+
 # Driver Method
 if __name__ == "__main__":
     theArray = [10, 51, 2, 18, 4, 31, 13, 5, 23, 64, 29]
@@ -33,3 +46,8 @@ if __name__ == "__main__":
     sortedArray = sorted(theArray)
     print("Searching for 3:", sortedLinearSearch(sortedArray, 3))
     print("Searching for 4:", sortedLinearSearch(sortedArray, 4))
+
+    print("\n\nFinding the smallest value in the list")
+    print("The smallest value is:", findSmallest(theArray))
+
+
