@@ -22,7 +22,7 @@ def sortedLinearSearch(theValue, item):
     return False    # The item is not in the sequence
 
 
-# Finding the smallest value in an unsorted list
+# Finds the smallest value in an unsorted list
 def findSmallest(theValues):
     n = len(theValues)
     # Assume the first item is the smallest
@@ -33,6 +33,19 @@ def findSmallest(theValues):
             smallest = theValues[i]
 
     return smallest     # Return the smallest found
+
+
+# Finds the greatest value in an unsorted list
+def findGreatest(theValues):
+    n = len(theValues)
+    # Assume the first item is the greatest value
+    greatest = theValues[0]
+    # Determine if any other item in the sequence is greater
+    for i in range(1, n):
+        if theValues[i] > greatest:
+            greatest = theValues[i]
+
+    return greatest     # Returns the greatest found
 
 
 # Driver Method
@@ -50,4 +63,5 @@ if __name__ == "__main__":
     print("\n\nFinding the smallest value in the list")
     print("The smallest value is:", findSmallest(theArray))
 
-
+    print("\n\nFinding the greatest value in the list")
+    print("The greatest value is:", findGreatest(theArray))
