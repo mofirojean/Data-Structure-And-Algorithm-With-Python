@@ -23,7 +23,8 @@ def isValidSource(srcfile):
 
 # Driver method
 if __name__ == "__main__":
-    with open("sample.java", "r") as javaFile, open("sample.cpp", "r") as cppFile, :
+    with open("sample.java", "r") as javaFile, open("sample.cpp", "r") as cppFile, open("recursion.js", "r") as jsFile:
         print("Testing the files if delimiters are now balanced")
         print("Testing a C++ file:", isValidSource(cppFile))
+        print("Testing a JavaScript file:", isValidSource(jsFile))
         print("Testing a Java file:", isValidSource(javaFile))
