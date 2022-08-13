@@ -35,11 +35,8 @@ class CircularLinkedList:
     # removing an item in a circular linked list
 
 
-        
-
 # Private class for storing the values of each node
 class CListNode:
     def __init__(self, data):
         self.data = data
         self.next = None
-
