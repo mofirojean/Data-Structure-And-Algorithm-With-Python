@@ -1,4 +1,5 @@
 # Implementation of the various processes that can be done with a doublyll
+from doublyll import SortedDoublyLinkedList
 
 
 # Implementation of the traversal method
@@ -51,3 +52,15 @@ def search(head, probe, target):
     # If the target is not found in the list return  false
     return False
 
+
+# Driver method
+dlls = SortedDoublyLinkedList()
+dlls.insert(30)
+dlls.insert(23)
+dlls.insert(2)
+dlls.insert(3)
+dlls.insert(10)
+print("reverse the list:", revTraversal(dlls.tail))
+print("traverse the list", Traversal(dlls.head))
+print("Search for 30: ", search(dlls.head, dlls.probe, 30))
+print(dlls)
