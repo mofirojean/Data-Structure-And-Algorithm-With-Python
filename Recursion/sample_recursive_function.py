@@ -8,7 +8,7 @@ def printRev(n):
 # Prints numbers from 1 to n in ascending order
 def printInAscOrder(n):
     if n > 0:
-        printRev(n - 1)
+        printInAscOrder(n - 1)
         print(n)
 
 
